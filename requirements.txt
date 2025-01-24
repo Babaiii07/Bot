@@ -4,3 +4,4 @@ langchain_groq
 sentence-transformers
 faiss-cpu
 python-dotenv
+langchain-community
