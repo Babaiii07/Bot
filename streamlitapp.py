@@ -52,11 +52,12 @@ def generate_response(question):
     response = llm.invoke(formatted_prompt)
     return response.content
 
-st.set_page_config(page_title="Medical Bot", page_icon="🤖", layout="centered")
-st.header("Medical Bot 🤖")
+st.set_page_config(page_title="HealthCare ChatBot", page_icon="🤖", layout="centered")
+st.header("HealthCare ChatBot 🤖")
 
-user_input = st.text_input("Ask a medical question:", "")
+user_input = st.text_input("Ask a Healthcare related question:", "")
 st.button("Generate Response")
+st.spinner('Processing')
 
 if user_input:
     user_input = user_input.lower().strip()
